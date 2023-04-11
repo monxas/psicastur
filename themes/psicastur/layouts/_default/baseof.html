@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
-  {{ partial "head.html" . }}
-  <body>
-    {{ partial "header.html" . }} {{- block "main" . }}{{- end }} {{ partial "footer.html" . }}
-    <script src="/js/flowbite.min.js"></script>
-    <script src="/js/glightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
+{{ partial "head.html" . }}
+
+<body>
+  {{ partial "header.html" . }} {{- block "main" . }}{{- end }} {{ partial "footer.html" . }}
+  <!-- defer js load -->
+  <script defer src="/js/flowbite.min.js"></script>
+  <script defer src="/js/glightbox.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    // execute only when the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
       const swiper = new Swiper(".swiper", {
         // Optional parameters
         direction: "horizontal",
@@ -33,9 +37,12 @@
           pauseOnMouseEnter: true,
         },
       });
-    </script>
+    });
+  </script>
 
-    <script>
+  <script>
+    // execute only when the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
       var lightbox = GLightbox();
       lightbox.on("open", (target) => {
         console.log("lightbox opened");
@@ -50,6 +57,8 @@
       var lightboxInlineIframe = GLightbox({
         selector: ".glightbox4",
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
