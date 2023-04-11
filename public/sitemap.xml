@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/aviso-legal/</loc>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/colaboraciones/</loc>
+  </url><url>
+    <loc>/contacto/</loc>
+  </url><url>
+    <loc>/metodologia/</loc>
+  </url><url>
+    <loc>/politica-privacidad/</loc>
+  </url><url>
+    <loc>/</loc>
+  </url><url>
+    <loc>/quienes-somos/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url><url>
+    <loc>/tarifas/</loc>
+  </url><url>
+    <loc>/terapias/</loc>
+  </url>
+</urlset>

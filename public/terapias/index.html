@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PsicAstur - Terapias</title>
+  <meta name="description" content="this is meta description" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/glightbox.min.css" />
+  
+  <link rel="stylesheet" href="/style.css" />
+  <script defer src="/fontawesome/js/brands.js"></script>
+  <script defer src="/fontawesome/js/solid.js"></script>
+  <script defer src="/fontawesome/js/regular.js"></script>
+  <script defer src="/fontawesome/js/fontawesome.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#91d0cc" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+  <body>
+    <div class="z-40 bg-beige px-4 xl:px-16">
+  <div class="mx-auto flex flex-wrap items-center justify-between py-4 px-4 pb-4 lg:pt-2 lg:pb-2">
+    <div class="my-2 flex justify-center gap-8 md:justify-start">
+      
+      <a href="https://facebook.com/PsicAstur" class="text-primary hover:opacity-80" rel="noopener noreferrer" target="_blank">
+        <span class="sr-only">Facebook</span>
+        <i class="fa-brands fa-facebook fa-xl"></i>
+      </a>
+      
+      <a href="https://wa.me/649174578" class="text-primary hover:opacity-80" rel="noopener noreferrer" target="_blank">
+        <span class="sr-only">WhatsApp</span>
+        <i class="fa-brands fa-whatsapp fa-xl"></i>
+      </a>
+      
+      <a href="https://instagram.com/psicastur" class="text-primary hover:opacity-80" rel="noopener noreferrer" target="_blank">
+        <span class="sr-only">Instagram</span>
+        <i class="fa-brands fa-instagram fa-xl"></i>
+      </a>
+      
+      <a href="mailto:administracion@psicastur.com" class="text-primary hover:opacity-80" rel="noopener noreferrer" target="_blank">
+        <span class="sr-only">Email</span>
+        <i class="fa-solid fa-envelope fa-xl"></i>
+      </a>
+      
+    </div>
+    <div class="text-primary">
+      <span class="hidden pl-8 lg:inline">
+        <a class="text-primary hover:opacity-80" href="https://goo.gl/maps/DCtNCWruBYceLpzj6" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-location-dot fa-lg pr-2"></i> C. Uría 50, Planta 2, Oficina 2, 33003 Oviedo, Asturias</a>
+      </span>
+      <span class="pl-8">
+        <a class="text-primary hover:opacity-80" href="tel:649174578" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-phone fa-lg pr-2"></i> 649.174.578</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<nav class="border-gray-200 bg-white px-4 drop-shadow-sm">
+  <div class="mx-auto flex flex-wrap items-center justify-between py-4 px-4 xl:px-16 xl:pr-10">
+    <a href="/" class="flex items-center">
+      <img src="/img/psicastur-logo.png" class="-ml-1 mr-3 h-16 sm:h-24" alt="Terapias" />
+      
+    </a>
+    <button data-collapse-toggle="navbar-dropdown" type="button" class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden" aria-controls="navbar-dropdown" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
+      <ul class="lg:text-md mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:bg-white lg:font-medium">
+            
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" data-dropdown-delay="100" data-dropdown-trigger="hover" class="flex w-full items-center justify-between rounded py-2 pl-3 pr-4 font-medium text-gray-700 hover:bg-gray-100 lg:w-auto lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-[#91d0cc]">
+            Quienes somos <svg class="ml-1 h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          
+          <div id="dropdownNavbar1" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow">
+            <ul class="text-md py-2 text-gray-700" aria-labelledby="dropdownLargeButton">
+              
+              <li>
+                <a href="/quienes-somos/" class="block px-4 py-2 hover:bg-gray-100">Quienes somos</a>
+              </li>
+              
+              <li>
+                <a href="/quienes-somos/#el-equipo" class="block px-4 py-2 hover:bg-gray-100">El equipo</a>
+              </li>
+              
+              <li>
+                <a href="/quienes-somos/#el-centro" class="block px-4 py-2 hover:bg-gray-100">El centro</a>
+              </li>
+              
+            </ul>
+          </div>
+        </li>
+           
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" data-dropdown-delay="100" data-dropdown-trigger="hover" class="flex w-full items-center justify-between rounded py-2 pl-3 pr-4 font-medium text-gray-700 hover:bg-gray-100 lg:w-auto lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-[#91d0cc]">
+            Terapias <svg class="ml-1 h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          
+          <div id="dropdownNavbar2" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow">
+            <ul class="text-md py-2 text-gray-700" aria-labelledby="dropdownLargeButton">
+              
+              <li>
+                <a href="/terapias/" class="block px-4 py-2 hover:bg-gray-100">Terapias</a>
+              </li>
+              
+              <li>
+                <a href="/terapias/#poblacion-adulta" class="block px-4 py-2 hover:bg-gray-100">Población Adulta</a>
+              </li>
+              
+              <li>
+                <a href="/terapias/#poblacion-infantil" class="block px-4 py-2 hover:bg-gray-100">Población Infantil</a>
+              </li>
+              
+              <li>
+                <a href="/terapias/#poblacion-juvenil" class="block px-4 py-2 hover:bg-gray-100">Población juvenil</a>
+              </li>
+              
+              <li>
+                <a href="/terapias/#terapia-familiar" class="block px-4 py-2 hover:bg-gray-100">Terapia Familiar</a>
+              </li>
+              
+              <li>
+                <a href="/terapias/#terapia-de-pareja" class="block px-4 py-2 hover:bg-gray-100">Terapia de Pareja</a>
+              </li>
+              
+              <li>
+                <a href="/terapias/#informes-y-peritajes-judiciales" class="block px-4 py-2 hover:bg-gray-100">Informes y Peritajes Judiciales</a>
+              </li>
+              
+            </ul>
+          </div>
+        </li>
+           
+        <li>
+          <a href="/metodologia/" class="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-[#91d0cc]">Metodología</a>
+        </li>
+           
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4" data-dropdown-delay="100" data-dropdown-trigger="hover" class="flex w-full items-center justify-between rounded py-2 pl-3 pr-4 font-medium text-gray-700 hover:bg-gray-100 lg:w-auto lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-[#91d0cc]">
+            Tarifas <svg class="ml-1 h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          
+          <div id="dropdownNavbar4" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow">
+            <ul class="text-md py-2 text-gray-700" aria-labelledby="dropdownLargeButton">
+              
+              <li>
+                <a href="/tarifas/" class="block px-4 py-2 hover:bg-gray-100">Tarifas</a>
+              </li>
+              
+              <li>
+                <a href="/tarifas/#pol%C3%ADtica-de-cancelaciones" class="block px-4 py-2 hover:bg-gray-100">Politica de cancelaciones</a>
+              </li>
+              
+              <li>
+                <a href="/tarifas/#seguros-medicos" class="block px-4 py-2 hover:bg-gray-100">Seguros médicos</a>
+              </li>
+              
+            </ul>
+          </div>
+        </li>
+           
+        <li>
+          <a href="/contacto/" class="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-[#91d0cc]">Contacto</a>
+        </li>
+           
+        <li>
+          <a href="/colaboraciones/" class="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-[#91d0cc]">Colaboraciones</a>
+        </li>
+         
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div id="hero" class="relative -z-10">
+  <img class="h-96 w-full object-cover md:h-[500px]" src="/img/portada.jpg" alt="Hero" />
+  <div class="container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+    <div class="swiper p-8 md:max-w-3xl">
+      <div class="swiper-wrapper">
+        
+        <div class="quote swiper-slide">
+          <p class="text-center text-lg text-white md:text-3xl">El equilibrio no significa evitar conflictos, implica la fuerza para tolerar emociones dolorosas y poder manejarlas</p>
+          <p class="mt-4 text-center text-lg uppercase text-white md:mt-8 md:text-3xl">M. Klein</p>
+        </div>
+        
+        <div class="quote swiper-slide">
+          <p class="text-center text-lg text-white md:text-3xl">Todas las personas hablan de la mente sin titubear, pero se quedan perplejas cuando les pide que la definan</p>
+          <p class="mt-4 text-center text-lg uppercase text-white md:mt-8 md:text-3xl">B.F. Skinner</p>
+        </div>
+        
+        <div class="quote swiper-slide">
+          <p class="text-center text-lg text-white md:text-3xl">“La única manera de aprender a gestionar tus emociones es sintiéndolas, no evitándolas”</p>
+          <p class="mt-4 text-center text-lg uppercase text-white md:mt-8 md:text-3xl">Anónimo</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+  
+
+
+<div id="terapias" class="mx-auto mt-8 flex w-full max-w-7xl justify-center py-4 px-4">
+  <span class="isolate mb-24 inline-flex flex-wrap justify-center gap-2 overflow-x-auto">
+    
+    <a href="#poblacion-adulta" class="relative inline-flex items-center rounded-3xl bg-beige px-3 py-2 text-xs font-semibold text-primary shadow-sm transition duration-200 hover:bg-beige-dark focus:z-10 md:text-sm">Población Adulta</a>
+    
+    <a href="#poblacion-infantil" class="relative inline-flex items-center rounded-3xl bg-beige px-3 py-2 text-xs font-semibold text-primary shadow-sm transition duration-200 hover:bg-beige-dark focus:z-10 md:text-sm">Población Infantil</a>
+    
+    <a href="#poblacion-juvenil" class="relative inline-flex items-center rounded-3xl bg-beige px-3 py-2 text-xs font-semibold text-primary shadow-sm transition duration-200 hover:bg-beige-dark focus:z-10 md:text-sm">Población juvenil</a>
+    
+    <a href="#terapia-familiar" class="relative inline-flex items-center rounded-3xl bg-beige px-3 py-2 text-xs font-semibold text-primary shadow-sm transition duration-200 hover:bg-beige-dark focus:z-10 md:text-sm">Terapia Familiar</a>
+    
+    <a href="#terapia-de-pareja" class="relative inline-flex items-center rounded-3xl bg-beige px-3 py-2 text-xs font-semibold text-primary shadow-sm transition duration-200 hover:bg-beige-dark focus:z-10 md:text-sm">Terapia de Pareja</a>
+    
+    <a href="#informes-y-peritajes-judiciales" class="relative inline-flex items-center rounded-3xl bg-beige px-3 py-2 text-xs font-semibold text-primary shadow-sm transition duration-200 hover:bg-beige-dark focus:z-10 md:text-sm">Informes y Peritajes Judiciales</a>
+    
+  </span>
+</div>
+
+
+<div class="container mx-auto max-w-7xl px-4">
+  
+  <div id="poblacion-adulta" class="mx-auto mb-16 max-w-7xl px-2 text-left lg:mb-24 lg:px-8">
+    <h2 class="text-left text-3xl font-semibold leading-tight text-mint sm:text-5xl">Población Adulta</h2>
+    <div class="lg:mt-8 lg:gap-12 xl:columns-2">
+      <img class="xl:not-prose picture prose w-full py-4 lg:pb-8 xl:ml-auto xl:h-[380px] xl:w-[567px] xl:object-cover" src="/img/terapias/adultos.jpg" alt="Población Adulta" />
+      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[550px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5"> <ul>
+<li>
+<p><strong>Depresión</strong>: Aparecen síntomas como tristeza, apatía, dificultad en la toma de decisiones, desmotivación o desesperanza hacia el futuro</p>
+</li>
+<li>
+<p><strong>Trastorno de ansiedad generalizada</strong>: Hiperactivación fisiológica (palpitaciones, nerviosismo, dificultad para respirar, tensión muscular, insomnio, preocupaciones constantes, etc.)</p>
+</li>
+<li>
+<p><strong>Fobias</strong>: Miedo intenso e irracional ante diferentes objetos o situaciones, como por ejemplo insectos o lugares cerrados</p>
+</li>
+<li>
+<p><strong>Pánico y Agorafobia</strong>: Miedo intenso a lugares o situaciones que podrían causar pánico, con sensación de no poder escapar o con miedo a tener un ataque de pánico. Dificultad para sentirse seguro en público o entre multitudes, lo que puede provocar una incapacidad para salir de casa.</p>
+</li>
+<li>
+<p><strong>Trastorno de Estrés Postraumático</strong>: Ocurre tras un evento traumático, en ocasiones donde la persona pudo temer por su vida (como una agresión) o ante sucesos muy significativos en su vida (como la muerte de un ser querido o tras una situación de acoso). Aparece una hiperactivación fisiológica (nerviosismo, palpitaciones, dificultad para respirar, etc.), evitación de situaciones o personas que puedan recordarle el evento y reexperimentación de este (pensamientos recurrentes acerca de lo que pasó)</p>
+</li>
+<li>
+<p><strong>Trastorno Obsesivo-compulsivo</strong>: Aparecen pensamientos y miedos no deseados de manera repetitiva, junto con comportamientos para que este malestar desaparezca, llegando a interferir en actividades diarias y provocando gran sufrimiento emocional.</p>
+</li>
+<li>
+<p><strong>Trastorno de la Conducta Alimentaria</strong>: Fuerte preocupación por el peso, la imagen corporal y la alimentación, asociada a una angustia y malestar emocional, y junto a conductas alimentarias no saludables.</p>
+</li>
+<li>
+<p><strong>Trastornos de Personalidad</strong>: Existe un patrón de pensamientos y comportamientos marcado y poco saludable, con dificultades para relacionarse en diferentes situaciones y con las demás personas, por lo que puede causar problemas y limitaciones importantes en las relaciones, en las actividades sociales o en el trabajo.</p>
+</li>
+<li>
+<p><strong>Adicciones</strong>: No solo relacionado con el abuso de sustancias, sino también a conductas nocivas que afectan tanto para la persona como a su entorno. Por ejemplo: el abuso de alcohol, tabaco, psicofármacos, cannabis, cocaína, juego, compras, adicciones emocionales, etc.</p>
+</li>
+<li>
+<p><strong>Evaluación neuropsicológica</strong>: Valoración de las funciones cognitivas generales (atención, inteligencia, memoria, razonamiento, lenguaje, etc.)</p>
+</li>
+<li>
+<p><strong>Habilidades Sociales y Autoestima</strong>: Potenciación de estrategias comunicativas, que ayudan a resolver las situaciones sociales de forma efectiva, siendo capaces de ser asertivos, expresar nuestros sentimientos, deseos y necesidades, decir no, establecer límites, hacer y recibir críticas y preservar nuestros derechos asertivos.</p>
+</li>
+<li>
+<p><strong>Duelo</strong>: Es un proceso natural donde aparece una respuesta emocional ante una experiencia de pérdida. Pero en ocasiones, aparecen dificultades para aceptar dicha pérdida y pueden presentarse: tristeza profunda, dolor y pensamientos constantes acerca de la pérdida, falta de concentración, desesperanza hacia el futuro, aislamiento o problemas para llevar a cabo actividades cotidianas.</p>
+</li>
+</ul>
+ 
+      </div>
+    </div>
+  </div>
+  
+  <div id="poblacion-infantil" class="mx-auto mb-16 max-w-7xl px-2 text-left lg:mb-24 lg:px-8">
+    <h2 class="text-left text-3xl font-semibold leading-tight text-mint sm:text-5xl">Población Infantil</h2>
+    <div class="lg:mt-8 lg:gap-12 xl:columns-2">
+      <img class="xl:not-prose picture prose w-full py-4 lg:pb-8 xl:ml-auto xl:h-[380px] xl:w-[567px] xl:object-cover" src="/img/terapias/ninos.jpg" alt="Población Infantil" />
+      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[550px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5"> <ul>
+<li>
+<p><strong>Depresión infantil</strong>: Se observan síntomas en niños como tristeza, irritabilidad, malestar (por ejemplo, dolores de barriga) o molestias físicas, en ocasiones algo imprecisas. También pueden aparecer comportamientos agresivos, poco interés para jugar, rechazo a ir al colegio o dificultades para dormir, etc.</p>
+</li>
+<li>
+<p><strong>Trastorno de ansiedad generalizada</strong>: Aparecen preocupaciones excesivas, se observa que los niños se preocupan por muchas cosas diferentes (notas, su salud o la de sus familiares, lo que pasa en el mundo, etc.), lo que dificulta que se relajen, se diviertan, les cueste dormir por la noche, les cueste hacer los deberes, etc.</p>
+</li>
+<li>
+<p><strong>Trastorno de ansiedad por separación</strong>: Miedo excesivo a estar separados de sus padres, lo que puede conllevar que no puedan dormir solos, no querer ir casa de un familiar sin los padres, dificultad para ir al colegio, no querer jugar con sus amigos o hacer otras actividades, si los padres no están cerca.</p>
+</li>
+<li>
+<p><strong>Fobia social</strong>: Aparece ansiedad ante ciertas situaciones sociales como exponer o intervenir en clase, iniciar o mantener conversaciones con sus iguales, participar en actividades con los niños de su edad, etc. Suele preocuparles mucho lo que otros puedan pensar de ellos o ser objeto de críticas.</p>
+</li>
+<li>
+<p><strong>Trastorno de estrés postraumático</strong>: Puede ocurrir después de un suceso traumático, apareciendo sentimientos y pensamientos negativos relacionados con lo que ha ocurrido, miedo o tristeza intensos, irritabilidad o ataques de ira, retraimiento, etc. También se puede observar que el niño revive la situación una y otra vez (pudiendo observarse en dibujos o en el juego) que tiene pesadillas y que evita lugares o personas que le recuerden el suceso.</p>
+</li>
+<li>
+<p><strong>Trastornos de la conducta</strong>: Pueden aparecer enfados o ira excesiva, discutir continuamente y rehusar el cumplimiento de las normas, mostrarse resentido, molestar a otros de forma consciente o culpar a los otros de los propios errores.</p>
+</li>
+<li>
+<p><strong>Acoso escolar</strong>: Daños físicos o psicológicos que sufre un niño por parte de otro o de un grupo, que se producen de manera reiterada, intencionada y unidireccional. A raíz de esta situación podemos observar señales en el niño tales como problemas para concentrarse y empeoramiento del rendimiento escolar, miedo a ir a clase, dolores y malestar que aparece antes de ir al colegio, problemas para dormir, tristeza o episodios de ira, miedo a estar solo, inquietud, nerviosismo, etc.</p>
+</li>
+<li>
+<p><strong>Trastorno por déficit de atención e hiperactividad (TDAH)</strong>: Los niños con TDAH pueden tener problemas para prestar y mantener la atención, ser excesivamente activos y presentar un comportamiento impulsivo. Podemos observar que olvidan o pierden las cosas con mucha frecuencia, les cuesta prestar atención a los detalles, seguir instrucciones, se mueven nerviosamente, hablan mucho, tienen problemas para respetar los turnos, dificultades en las relaciones con sus iguales, etc.</p>
+</li>
+<li>
+<p><strong>Trastornos del espectro autista (TEA):</strong> Son trastorno del neurodesarrollo. Los niños con TEA suelen presentar dificultades para desarrollar relaciones sociales normalizadas, utilizar el lenguaje de forma adecuada (o no usarlo) y mostrar comportamientos restringidos o repetitivos. Pero lo cierto, es que los TEA se consideran un espectro precisamente porque pueden aparecer manifestaciones muy variadas tanto en tipo como en gravedad.</p>
+</li>
+<li>
+<p><strong>Dificultades de la lectoescritura</strong>: Aparecen dificultades en la precisión a la hora de leer palabras (por ejemplo, se saltan letras o palabras, se sustituyen unas por otras, le cuesta reconocer algunas palabras, etc.), en la velocidad lectora (leen despacio, lectura silábica, poca fluidez, etc.) y en la comprensión de lo que leen. También puede aparecer problemas en la ortografía, la gramática, los signos de puntuación y la organización de la expresión escrita</p>
+</li>
+<li>
+<p><strong>Evaluación neuropsicológica</strong>: Valoración de las funciones cognitivas generales (atención, inteligencia, memoria, razonamiento, lenguaje, etc.)</p>
+</li>
+<li>
+<p><strong>Habilidades Sociales y Autoestima:</strong> Desarrollo y potenciación de la comunicación, empatía, asertividad, escucha activa, autocontrol y resolución de conflictos orientada a niños.</p>
+</li>
+</ul>
+ 
+      </div>
+    </div>
+  </div>
+  
+  <div id="poblacion-juvenil" class="mx-auto mb-16 max-w-7xl px-2 text-left lg:mb-24 lg:px-8">
+    <h2 class="text-left text-3xl font-semibold leading-tight text-mint sm:text-5xl">Población juvenil</h2>
+    <div class="lg:mt-8 lg:gap-12 xl:columns-2">
+      <img class="xl:not-prose picture prose w-full py-4 lg:pb-8 xl:ml-auto xl:h-[380px] xl:w-[567px] xl:object-cover" src="/img/terapias/adolescentes.jpg" alt="Población juvenil" />
+      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[550px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5"> <ul>
+<li>
+<p><strong>Depresión en adolescentes:</strong> Aparece tristeza, sensación de vacío, desesperanza, irritabilidad, frustración, disfrutan menos de aquello que solían disfrutar, aislamiento, falta de energía. Pueden aparecer pensamientos o conductas autolíticas.</p>
+</li>
+<li>
+<p><strong>Pánico y Agorafobia:</strong> Miedo o ansiedad intensos en lugares públicos o en situaciones donde puede resultar difícil escapar o no hay nadie quien pudiera ayudar. Algunos ejemplos donde aparece dicha ansiedad y por tanto se evitan serían: utilizar transportes públicos, estar en espacios abiertos, espacios públicos cerrados (tiendas, cines, etc.), hacer cola o estar con una multitud (conciertos o estadios), etc.</p>
+</li>
+<li>
+<p><strong>Trastorno de ansiedad generalizada:</strong> Se caracteriza por una ansiedad y preocupaciones excesivas y persistentes sobre un gran número de hechos y actividades de la vida diaria, que llegan a interferir en su funcionamiento familiar, social y escolar. Estas preocupaciones pueden estar relacionadas con el instituto, la familia, los amigos, las notas, necesidad de aprobación, situaciones pasadas y futuras, salud, etc.</p>
+</li>
+<li>
+<p><strong>Fobia social:</strong> Se caracteriza por sentirse o mostrarse tímido, sentir vergüenza o ansiedad ante situaciones sociales de una manera excesiva. Suelen ser capaces de interactuar con la familia y algunos amigos más cercanos, pero conocer gente nueva, hablar en público, relacionarse en un grupo, participar en clase, etc., les conlleva mucha dificultad y malestar, de manera que tratan de evitarlo por completo, llegando a afectar al normal funcionamiento de la vida diaria.</p>
+</li>
+<li>
+<p><strong>Trastorno Obsesivo-compulsivo:</strong> Aparecen en el adolescente ideas obsesivas acompañadas por comportamientos compulsivos (en forma de ritual, con el objetivo de disminuir el malestar que provocan las obsesiones). Algunos ejemplos que pueden aparecer son el miedo a contaminarse, preocupaciones acerca de la seguridad o salud suya o de sus padres, etc.</p>
+</li>
+<li>
+<p><strong>Trastorno de estrés postraumático</strong>: Puede ocurrir como consecuencia de un suceso traumático que ha vivido o presenciado. Aparecen recuerdos recurrentes desagradables, problemas para dormir y pesadillas, evitar aquellas personas o situaciones que le evoquen el recuerdo del trauma, cambios en el estado de ánimo, ansiedad, hiperactivación, sensación de alerta continua, etc.</p>
+</li>
+<li>
+<p><strong>Trastorno de la Conducta Alimentaria:</strong> Existe una alteración en los comportamientos alimentarios del adolescente y en la actitud respecto a la comida y el aspecto físico, que aparece acompañada de malestar emocional (tristeza, ansiedad, sensación de vacío y soledad, etc.) y que produce un empeoramiento significativo en el funcionamiento de la vida diaria y de la salud.</p>
+</li>
+<li>
+<p><strong>Trastornos de la conducta:</strong> Se observa un patrón persistente de un estado de ánimo irritable y agresivo, desobediencia, conducta desafiante, dificultad o resistencia a aceptar las normas y reglas sociales, etc.</p>
+</li>
+<li>
+<p><strong>Acoso escolar:</strong> Daños físicos o psicológicos que sufre un adolescente por parte de otro o de un grupo, que se producen de manera reiterada, intencionada y de manera unidireccional. A raíz de esta situación podemos observar señales en el menor como lesiones inexplicables, pérdida de objetos personales, dolores de cabeza o estómago frecuentes, cambios en los hábitos de alimentación, dificultad para dormir, empeoramiento del rendimiento escolar, miedo o negativa a ir al instituto, pérdida de amigos o evitación de situaciones sociales, disminución de la autoestima, irritabilidad, etc.</p>
+</li>
+<li>
+<p><strong>Evaluación neuropsicológica:</strong> Valoración de las funciones cognitivas generales (atención, inteligencia, memoria, razonamiento, lenguaje, etc.)</p>
+</li>
+<li>
+<p><strong>Habilidades Sociales:</strong> Desarrollo y potenciación orientados a adolescentes de estrategias comunicativas que les permitan ser asertivos, expresar sus sentimientos, deseos y necesidades, decir no, establecer límites, hacer y recibir críticas, iniciar y mantener conversaciones, dar su opinión, etc.</p>
+</li>
+</ul>
+ 
+      </div>
+    </div>
+  </div>
+  
+  <div id="terapia-familiar" class="mx-auto mb-16 max-w-7xl px-2 text-left lg:mb-24 lg:px-8">
+    <h2 class="text-left text-3xl font-semibold leading-tight text-mint sm:text-5xl">Terapia Familiar</h2>
+    <div class="lg:mt-8 lg:gap-12 xl:columns-2">
+      <img class="xl:not-prose picture prose w-full py-4 lg:pb-8 xl:ml-auto xl:h-[380px] xl:w-[567px] xl:object-cover" src="/img/terapias/familia.jpg" alt="Terapia Familiar" />
+      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[550px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5"> <p>La terapia familiar trata de modificar las dinámicas relacionales dentro del marco familiar, ayudando a mejorar las relaciones entre los diferentes miembros, la comunicación, la resolución de conflictos, etc. Se tienen en cuenta todas las partes que componen el sistema familiar y cómo se interrelacionan, enfocándonos más en la solución del problema que en el problema en sí.</p>
+<p>Entre esos problemas en el ámbito familiar pueden encontrarse: diferencias en las pautas de crianza de los hijos, comunicación deficiente entre los miembros del núcleo, problemas entre los padres, etc.</p>
+<p>También la terapia familiar resulta muy útil a la hora de ayudar a los miembros de la familia a enfrentar una enfermedad que sufra uno de ellos, si existe un caso de adicción por parte de uno de los miembros, mediación en caso de separación, fallecimiento de un ser querido, etc.</p>
+ 
+      </div>
+    </div>
+  </div>
+  
+  <div id="terapia-de-pareja" class="mx-auto mb-16 max-w-7xl px-2 text-left lg:mb-24 lg:px-8">
+    <h2 class="text-left text-3xl font-semibold leading-tight text-mint sm:text-5xl">Terapia de Pareja</h2>
+    <div class="lg:mt-8 lg:gap-12 xl:columns-2">
+      <img class="xl:not-prose picture prose w-full py-4 lg:pb-8 xl:ml-auto xl:h-[380px] xl:w-[567px] xl:object-cover" src="/img/terapias/pareja.jpg" alt="Terapia de Pareja" />
+      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[550px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5">
+        <p>La terapia de pareja está enfocada a analizar y tratar aquellos conflictos que pueden aparecer en una relación amorosa (tales como los celos, infidelidades, problemas en la comunicación y en la resolución de problemas o búsqueda de soluciones, insatisfacción sexual, problemas en la familia de origen, dependencia emocional, etc.) de tal forma que puedan adquirirse habilidades, estrategias, herramientas y recursos que permitan el desarrollo de una relación afectiva más sana, funcional y satisfactoria para la pareja en su conjunto y para cada miembro de la misma en particular.</p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div id="informes-y-peritajes-judiciales" class="mx-auto mb-16 max-w-7xl px-2 text-left lg:mb-24 lg:px-8">
+    <h2 class="text-left text-3xl font-semibold leading-tight text-mint sm:text-5xl">Informes y Peritajes Judiciales</h2>
+    <div class="lg:mt-8 lg:gap-12 xl:columns-2">
+      <img class="xl:not-prose picture prose w-full py-4 lg:pb-8 xl:ml-auto xl:h-[380px] xl:w-[567px] xl:object-cover" src="/img/terapias/informe.jpg" alt="Informes y Peritajes Judiciales" />
+      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[550px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5"> <p>En el Gabinete de Psicología PsicAstur ofrecemos la posibilidad de realización de 3 tipos de informes:</p>
+<ol>
+<li><strong>Informe de seguimiento</strong>, en el que se recoge la información y resultado de las pruebas estandarizadas realizadas en la consulta para la evaluación y tratamiento del caso, incluyendo depresión, ansiedad, habilidades de afrontamiento, distorsiones de pensamiento y autoestima.</li>
+<li><strong>Informe diagnóstico</strong>, que es un informe más completo que incluye pruebas diagnósticas sobre personalidad y funciones cognitivas</li>
+<li><strong>Informe psicológicos forenses,</strong> realizados mediante una serie de técnicas que permiten acreditar de una forma objetiva, si hay una causalidad entre unos hechos y una sintomatología dentro del contexto jurídico</li>
+</ol>
+<ul>
+<li><strong>Si te sientes identificad@ o conoces a alguien que pueda estar pasando por ello, no dudes en contactar con nosotras e informarte</strong></li>
+</ul>
+ 
+      </div>
+    </div>
+  </div>
+  
+</div>
+   <footer class="mt-8 bg-[#f3e5d5] py-8 lg:mt-24 lg:py-16">
+  <div class="mx-auto max-w-7xl pb-8 sm:px-6 lg:px-8">
+    <nav class="flex flex-col flex-wrap items-center justify-between gap-4 md:gap-8 min-[1140px]:flex-row" aria-label="Footer">
+        
+      <a href="/quienes-somos/" class="order-2 text-sm leading-6 text-primary text-opacity-80 hover:text-opacity-100 md:text-base">Quienes somos</a>
+       
+      <a href="/terapias/" class="order-4 text-sm leading-6 text-primary text-opacity-80 hover:text-opacity-100 md:text-base">Terapias</a>
+       
+      <a href="/metodologia/" class="order-6 text-sm leading-6 text-primary text-opacity-80 hover:text-opacity-100 md:text-base">Metodología</a>
+       
+      <a href="/tarifas" class="order-8 text-sm leading-6 text-primary text-opacity-80 hover:text-opacity-100 md:text-base">Tarifas</a>
+       
+      <a href="/contacto/" class="order-10 text-sm leading-6 text-primary text-opacity-80 hover:text-opacity-100 md:text-base">Contacto</a>
+       
+      <a href="/colaboraciones/" class="order-12 text-sm leading-6 text-primary text-opacity-80 hover:text-opacity-100 md:text-base">Colaboraciones</a>
+      
+      <a href="/" class="order-1 px-12 min-[1140px]:order-7">
+        <img src="/img/psicastur-logo.png" class="mb-4 h-16 w-auto sm:h-24 md:-ml-1 lg:mb-2" alt="PsicAstur" />
+      </a>
+    </nav>
+  </div>
+  <div class="flex justify-center">
+    <div class="mx-8 w-full max-w-7xl border-t border-[#0c1a2b] border-opacity-20"></div>
+  </div>
+  <div class="mx-auto flex max-w-7xl flex-col justify-between pb-8 sm:px-6 md:flex-row lg:px-8">
+    <div><a href="/" class="mt-6 block text-center text-sm leading-5 text-primary text-opacity-80 hover:text-opacity-100 md:mb-0 md:text-base">&copy; 2023 PsicAstur - Gabinete de Psicologia</a></div>
+    <div class="mt-6 flex justify-center gap-8">
+      <a href="/politica-privacidad/" class="text-center text-sm leading-5 text-primary text-opacity-80 hover:text-opacity-100 md:mb-0 md:text-base">Política de Privacidad</a>
+      <a href="/aviso-legal/" class="text-center text-sm leading-5 text-primary text-opacity-80 hover:text-opacity-100 md:mb-0 md:text-base">Aviso Legal</a>
+    </div>
+  </div>
+</footer>
+
+    <script src="/js/flowbite.min.js"></script>
+    <script src="/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script>
+      const swiper = new Swiper(".swiper", {
+        
+        direction: "horizontal",
+        loop: true,
+
+        autoplay: {
+          delay: 2000,
+        },
+
+        effect: "fade",
+
+        fadeEffect: {
+          crossFade: true,
+        },
+
+        spaceBetween: 30,
+        
+
+        speed: 1000,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+      });
+    </script>
+
+    <script>
+      var lightbox = GLightbox();
+      lightbox.on("open", (target) => {
+        console.log("lightbox opened");
+      });
+      var lightboxDescription = GLightbox({
+        selector: ".glightbox2",
+      });
+      var lightboxVideo = GLightbox({
+        selector: ".glightbox3",
+      });
+
+      var lightboxInlineIframe = GLightbox({
+        selector: ".glightbox4",
+      });
+    </script>
+  </body>
+</html>
