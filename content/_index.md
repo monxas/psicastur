@@ -7,7 +7,7 @@ hero:
   enable: true
   title: "title"
   text: "text"
-  image: "/img/portada.jpg"
+  image: "/img/portada.webp"
   quotes:
     - quote: "La psicología no puede decirle a la gente cómo deben vivir sus vidas. Sin embargo, puede proporcionarles los medios para efectuar el cambio personal y social"
       author: "A. Bandura"
@@ -29,32 +29,32 @@ terapias_links:
   links:
     - name: "Población Adulta"
       link: "/terapias/#poblacion-adulta"
-      image: "/img/icon01.jpg"
+      image: "/img/icon01.webp"
       text: "Abordaje de los problemas de ansiedad, estado de ánimo, autoestima, etc."
 
     - name: "Población juvenil"
       link: "/terapias/#poblacion-juvenil"
-      image: "/img/icon03.jpg"
+      image: "/img/icon03.webp"
       text: "Trabajo de las problemáticas en la etapa adolescente y aprendizaje de recursos para la gestión emocional"
 
     - name: "Población Infantil"
       link: "/terapias/#poblacion-infantil"
-      image: "/img/icon02.jpg"
+      image: "/img/icon02.webp"
       text: "Intervención con niños en dificultades del aprendizaje, miedos, escuela de padres, etc."
 
     - name: "Terapia Familiar"
       link: "/terapias/#terapia-familiar"
-      image: "/img/icon04.jpg"
+      image: "/img/icon04.webp"
       text: "Mediación para la resolución de conflictos dentro del ámbito familiar"
 
     - name: "Terapia de Pareja"
       link: "/terapias/#terapia-de-pareja"
-      image: "/img/icon05.jpg"
+      image: "/img/icon05.webp"
       text: "Recursos para mejorar la comunicación y adquisición de habilidades para el desarrollo de una relación afectiva sana"
 
     - name: "Informes y Peritajes Judiciales"
       link: "/terapias/#informes-y-peritajes-judiciales"
-      image: "/img/icon06.jpg"
+      image: "/img/icon06.webp"
       text: "Realización de informes psicológicos, educativos y judiciales"
 
 # How we work
@@ -63,7 +63,7 @@ how_we_work:
   title: "¿Cómo trabajamos?"
   text: |-
     En PsicAstur apostamos por el trabajo en equipo adoptando una metodología flexible e integradora que permita diseñar un tratamiento individualizado para cada persona
-  image: "/img/office/08.jpg"
+  image: "/img/office/08.webp"
 
 # Consultations
 consultations:

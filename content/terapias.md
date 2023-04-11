@@ -8,7 +8,7 @@ hero:
   enable: true
   title: "title"
   text: "text"
-  image: "/img/portada.jpg"
+  image: "/img/portada.webp"
   quotes:
     # slider item
     - quote: "El equilibrio no significa evitar conflictos, implica la fuerza para tolerar emociones dolorosas y poder manejarlas"
@@ -52,7 +52,7 @@ terapias:
         - **Habilidades Sociales y Autoestima**: Potenciación de estrategias comunicativas, que ayudan a resolver las situaciones sociales de forma efectiva, siendo capaces de ser asertivos, expresar nuestros sentimientos, deseos y necesidades, decir no, establecer límites, hacer y recibir críticas y preservar nuestros derechos asertivos.
 
         - **Duelo**: Es un proceso natural donde aparece una respuesta emocional ante una experiencia de pérdida. Pero en ocasiones, aparecen dificultades para aceptar dicha pérdida y pueden presentarse: tristeza profunda, dolor y pensamientos constantes acerca de la pérdida, falta de concentración, desesperanza hacia el futuro, aislamiento o problemas para llevar a cabo actividades cotidianas.
-      image: "/img/terapias/adultos.jpg"
+      image: "/img/terapias/adultos.webp"
 
     - title: "Población Infantil"
       id: "poblacion-infantil"
@@ -80,7 +80,7 @@ terapias:
         - **Evaluación neuropsicológica**: Valoración de las funciones cognitivas generales (atención, inteligencia, memoria, razonamiento, lenguaje, etc.)
 
         - **Habilidades Sociales y Autoestima:** Desarrollo y potenciación de la comunicación, empatía, asertividad, escucha activa, autocontrol y resolución de conflictos orientada a niños.
-      image: "/img/terapias/ninos.jpg"
+      image: "/img/terapias/ninos.webp"
 
     - title: "Población juvenil"
       id: "poblacion-juvenil"
@@ -106,7 +106,7 @@ terapias:
         - **Evaluación neuropsicológica:** Valoración de las funciones cognitivas generales (atención, inteligencia, memoria, razonamiento, lenguaje, etc.)
 
         - **Habilidades Sociales:** Desarrollo y potenciación orientados a adolescentes de estrategias comunicativas que les permitan ser asertivos, expresar sus sentimientos, deseos y necesidades, decir no, establecer límites, hacer y recibir críticas, iniciar y mantener conversaciones, dar su opinión, etc.
-      image: "/img/terapias/adolescentes.jpg"
+      image: "/img/terapias/adolescentes.webp"
 
     - title: "Terapia Familiar"
       id: "terapia-familiar"
@@ -116,14 +116,14 @@ terapias:
         Entre esos problemas en el ámbito familiar pueden encontrarse: diferencias en las pautas de crianza de los hijos, comunicación deficiente entre los miembros del núcleo, problemas entre los padres, etc.
 
         También la terapia familiar resulta muy útil a la hora de ayudar a los miembros de la familia a enfrentar una enfermedad que sufra uno de ellos, si existe un caso de adicción por parte de uno de los miembros, mediación en caso de separación, fallecimiento de un ser querido, etc.
-      image: "/img/terapias/familia.jpg"
+      image: "/img/terapias/familia.webp"
 
     - title: "Terapia de Pareja"
       id: "terapia-de-pareja"
       text: |-
         La terapia de pareja está enfocada a analizar y tratar aquellos conflictos que pueden aparecer en una relación amorosa (tales como los celos, infidelidades, problemas en la comunicación y en la resolución de problemas o búsqueda de soluciones, insatisfacción sexual, problemas en la familia de origen, dependencia emocional, etc.) de tal forma que puedan adquirirse habilidades, estrategias, herramientas y recursos que permitan el desarrollo de una relación afectiva más sana, funcional y satisfactoria para la pareja en su conjunto y para cada miembro de la misma en particular.
 
-      image: "/img/terapias/pareja.jpg"
+      image: "/img/terapias/pareja.webp"
 
     - title: "Informes y Peritajes Judiciales"
       id: "informes-y-peritajes-judiciales"
@@ -136,5 +136,5 @@ terapias:
 
         - **Si te sientes identificad@ o conoces a alguien que pueda estar pasando por ello, no dudes en contactar con nosotras e informarte**
 
-      image: "/img/terapias/informe.jpg"
+      image: "/img/terapias/informe.webp"
 ---

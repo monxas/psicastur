@@ -66,10 +66,10 @@ gallery:
   title: "Instalaciones"
   text: "Lorem ipsum dolor sit amet. Qui galisum reprehenderit hic suscipit vero et dicta blanditiis ea animi optio ut distinctio natus. Aut voluptatem soluta qui recusandae quae et recusandae galisum rem quod fuga! Qui odit dolorem qui dolorum maiores sit distinctio praesentium vel quos doloribus eum nihil obcaecati. Et temporibus velit ea dignissimos eius eos voluptas voluptatem et ratione fuga non consectetur ratione eum architecto deleniti!"
   images:
-    - image: 01.jpg
-    - image: 02.jpg
-    - image: 03.jpg
-    - image: 05.jpg
-    - image: 06.jpg
-    - image: 08.jpg
+    - image: 01.webp
+    - image: 02.webp
+    - image: 03.webp
+    - image: 05.webp
+    - image: 06.webp
+    - image: 08.webp
 ---
