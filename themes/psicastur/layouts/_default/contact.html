@@ -22,37 +22,37 @@
         <div class="prose text-justify text-primary prose-strong:text-primary">{{ .Params.text_after | markdownify }}</div>
       </div>
     </div>
-    <form action="/contact.php" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8">
+    <form id="contact-form" action="/contact.php" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8">
       <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
         <div class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
           <div class="sm:col-span-1">
             <label for="name" class="block text-sm font-semibold leading-6 text-gray-900"></label>
             <div class="mt-2.5">
-              <input type="text" name="name" id="name" autocomplete="name" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Your Name" />
+              <input type="text" name="name" id="name" autocomplete="name" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Tu nombre" />
             </div>
           </div>
           <div class="sm:col-span-1">
             <label for="email" class="block text-sm font-semibold leading-6 text-gray-900"></label>
             <div class="mt-2.5">
-              <input type="email" name="email" id="email" autocomplete="email" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Email Address" />
+              <input type="email" name="email" id="email" autocomplete="email" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Tu email" />
             </div>
           </div>
           <div class="sm:col-span-1">
             <label for="subject" class="block text-sm font-semibold leading-6 text-gray-900"></label>
             <div class="mt-2.5">
-              <input type="tel" name="subject" id="subject" autocomplete="tel" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Subject" />
+              <input type="tel" name="subject" id="subject" autocomplete="tel" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Asunto" />
             </div>
           </div>
           <div class="sm:col-span-1">
             <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900"></label>
             <div class="mt-2.5">
-              <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Phone" />
+              <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Teléfono" />
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="message" class="block text-sm font-semibold leading-6 text-gray-900"></label>
             <div class="mt-2.5">
-              <textarea name="message" id="message" rows="1" class="block h-auto w-full border-0 border-b border-neutral-200 py-2 px-0 pt-5 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Message"></textarea>
+              <textarea name="message" id="message" rows="1" class="block h-auto w-full border-0 border-b border-neutral-200 py-2 px-0 pt-5 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Mensaje"></textarea>
             </div>
           </div>
         </div>
@@ -60,15 +60,41 @@
           <div class="flex h-5 items-center">
             <input id="terms" type="checkbox" value="" class="focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 text-[#91d0cc] focus:ring-[#91d0cc]" required />
           </div>
-          <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">I agree with the <a href="/politica-privacidad/" class="text-[#5ab9b3] hover:underline" rel="noopener noreferrer" target="_blank">privacy policy</a></label>
+          <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">I agree with the <a href="/politica-privacidad/" class="text-[#5ab9b3] hover:underline" rel="noopener noreferrer" target="_blank">Política de privacidad</a></label>
         </div>
         <div class="mt-8 flex justify-end">
-          <button type="submit" class="rounded-md bg-[#91d0cc] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#9fd6d2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#91d0cc]">Send message</button>
+          <button type="submit" class="rounded-md bg-[#91d0cc] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#9fd6d2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#91d0cc]">Enviar mensaje</button>
         </div>
       </div>
     </form>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var contactForm = document.getElementById("contact-form");
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      var formData = new FormData(contactForm);
+      var xhr = new XMLHttpRequest();
+      xhr.open(contactForm.method, contactForm.action);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          // Success message
+          alert("Mensaje enviado correctamente. Gracias!");
+          contactForm.reset();
+        } else {
+          // Error message
+          alert("Ha ocurrido un error. Por favor, inténtalo de nuevo.");
+        }
+      };
+      xhr.send(formData);
+    });
+  });
+</script>
+
+
 
 {{ with .Params.working_hours }} {{ if .enable }}
 <div class="isolate overflow-hidden bg-white">
@@ -111,3 +137,4 @@
   </div>
 </div>
 {{ end }} {{ end }} {{ end }}
+

@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Validate email address
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
-    echo "Invalid email address.";
+    echo "Correo no válido";
     exit;
   }
 
@@ -25,16 +25,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email_subject = "Mensaje del formulario de contacto: $subject";
 
   // Construct email message
-  $email_body = "Name: $name\n\nEmail: $email\n\nPhone Number: $phone_number\n\nMessage:\n$message";
+  $email_body = "<html>
+    <head>
+      <meta charset=\"UTF-8\">
+      <title>$email_subject</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f6f6f6;
+        }
+        .container {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 5px;
+        }
+        h1 {
+          font-size: 28px;
+          color: #333;
+        }
+        p {
+          font-size: 16px;
+          color: #333;
+          line-height: 1.5;
+        }
+      </style>
+    </head>
+    <body>
+      <div class=\"container\">
+        <h1>$email_subject</h1>
+        <p><strong>Nombre:</strong> $name</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Teléfono:</strong> $phone_number</p>
+        <p><strong>Mensaje:</strong></p>
+        <p>$message</p>
+      </div>
+    </body>
+  </html>";
+
+  // Set headers for HTML email
+  $headers = "From: $email\r\n";
+  $headers .= "Reply-To: $email\r\n";
+  $headers .= "Content-type: text/html\r\n";
 
   // Send email
-  if (mail($to, $email_subject, $email_body)) {
+  if (mail($to, $email_subject, $email_body, $headers)) {
     http_response_code(200);
-    echo "Message sent successfully.";
+    echo "Mensaje enviado!";
     exit;
   } else {
     http_response_code(500);
-    echo "An error occurred while sending the message. Please try again later.";
+    echo "Ha ocurrido un error. Por favor, inténtelo de nuevo.";
     exit;
   }
 } else {
