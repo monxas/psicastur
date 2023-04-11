@@ -1,0 +1,10 @@
+baseURL = '/'
+# baseURL = 'https://psicastur.com/'
+languageCode = "es-ES"
+defaultContentLanguage = "es"
+title = "PsicAstur"
+theme = 'psicastur'
+# disableHugoGeneratorInject = true
+
+[markup.goldmark.renderer]
+unsafe= true

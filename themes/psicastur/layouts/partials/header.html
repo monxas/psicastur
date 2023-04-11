@@ -1,0 +1,22 @@
+<div class="z-40 bg-beige px-4 xl:px-16">
+  <div class="mx-auto flex flex-wrap items-center justify-between py-4 px-4 pb-4 lg:pt-2 lg:pb-2">
+    <div class="my-2 flex justify-center gap-8 md:justify-start">
+      {{ range .Site.Params.social }}
+      <a href="{{ .link | safeURL }}" class="text-primary hover:opacity-80" rel="noopener noreferrer" target="_blank">
+        <span class="sr-only">{{ .name }}</span>
+        <i class="{{ .icon }}"></i>
+      </a>
+      {{ end }}
+    </div>
+    <div class="text-primary">
+      <span class="hidden pl-8 lg:inline">
+        <a class="text-primary hover:opacity-80" href="{{ with .Site.Params.address_link }}{{ . }}{{ end }}" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-location-dot fa-lg pr-2"></i> {{ with .Site.Params.address }}{{ . }}{{ end }}</a>
+      </span>
+      <span class="pl-8">
+        <a class="text-primary hover:opacity-80" href="tel:{{ with .Site.Params.phone_link }}{{ . }}{{ end }}" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-phone fa-lg pr-2"></i> {{ with .Site.Params.phone }}{{ . }}{{ end }}</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+{{ partial "menu.html" . }}

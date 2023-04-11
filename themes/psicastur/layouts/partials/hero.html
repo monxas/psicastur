@@ -1,0 +1,18 @@
+{{ with .Params.hero }}{{ if .enable }}
+<div id="hero" class="relative -z-10">
+  <img class="h-96 w-full object-cover md:h-[500px]" src="{{ .image }}" alt="Hero" />
+  <div class="container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+    <div class="swiper p-8 md:max-w-3xl">
+      <div class="swiper-wrapper">
+        {{ range .quotes }}
+        <div class="quote swiper-slide">
+          <p class="text-center text-lg text-white md:text-3xl">{{ .quote }}</p>
+          <p class="mt-4 text-center text-lg uppercase text-white md:mt-8 md:text-3xl">{{ .author }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }} {{ end }}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }} {{- block "main" . }}{{- end }} {{ partial "footer.html" . }}
+    <script src="/js/flowbite.min.js"></script>
+    <script src="/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        autoplay: {
+          delay: 2000,
+        },
+
+        effect: "fade",
+
+        fadeEffect: {
+          crossFade: true,
+        },
+
+        spaceBetween: 30,
+        // effect: 'fade',
+
+        speed: 1000,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+      });
+    </script>
+
+    <script>
+      var lightbox = GLightbox();
+      lightbox.on("open", (target) => {
+        console.log("lightbox opened");
+      });
+      var lightboxDescription = GLightbox({
+        selector: ".glightbox2",
+      });
+      var lightboxVideo = GLightbox({
+        selector: ".glightbox3",
+      });
+
+      var lightboxInlineIframe = GLightbox({
+        selector: ".glightbox4",
+      });
+    </script>
+  </body>
+</html>

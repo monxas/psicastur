@@ -1,0 +1,68 @@
+{{ define "main" }} {{ partial "title.html" . }}
+
+<!-- El Equipo -->
+{{ with .Params.team }} {{ if .enable }}
+<div id="el-equipo" class="bg-white py-8">
+  <div class="mx-auto max-w-7xl px-6 text-left lg:px-8">
+    <div class="my-8 mt-0 flex max-w-full items-start justify-start px-6 md:my-16 lg:mx-0">
+      <h2 class="text-4xl font-bold tracking-tight text-[#91d0cc] sm:text-5xl">{{ .title }}</h2>
+    </div>
+    <div class="mt-0 flex max-w-full items-start justify-center lg:mx-0 lg:mt-8">
+      <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{{ .people_heading }}</h3>
+    </div>
+    <ul role="list" class="mx-auto my-20 grid max-w-7xl grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+      {{ range .people }}
+      <li>
+        <img class="mx-auto h-56 w-56 rounded-full object-cover" src="{{ .image }}" alt="{{ .name }}" />
+        <h3 class="mt-6 text-center text-base font-semibold leading-7 tracking-tight text-gray-700">{{ .name }}</h3>
+        <h3 class="mt-2 text-center text-base font-normal leading-7 tracking-tight text-gray-500">{{ .title }}</h3>
+        <p class="text-center text-base leading-6 text-gray-500">{{ .specialization }}</p>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="mt-8 flex max-w-full items-start justify-center lg:mx-0 lg:mt-24">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{{ .subtitle }}</h2>
+    </div>
+    <div class="prose my-8 mx-auto max-w-none px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] md:columns-1 md:gap-16 md:px-0 lg:my-12">{{ .text | markdownify }}</div>
+  </div>
+</div>
+{{ end }} {{ end }}
+
+<!-- El Centro -->
+{{ with .Params.el_centro }}{{ if .enable }}
+<div id="el-centro" class="bg-white py-8">
+  <div class="mx-auto max-w-7xl px-6 text-left lg:px-8">
+    <div class="my-8 mt-0 flex max-w-full items-start justify-start px-6 md:my-16 lg:mx-0">
+      <h2 class="text-4xl font-bold tracking-tight text-[#91d0cc] sm:text-5xl">{{ .title }}</h2>
+    </div>
+    <div class="mt-0 flex max-w-full items-start justify-center lg:mx-0 lg:mt-8">
+      <h3 class="mb-8 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{{ .subtitle }}</h3>
+    </div>
+    <div class="mx-auto flex w-full max-w-7xl flex-col items-end justify-center gap-6 p-4 text-left md:flex-row">
+      {{ range .cards }}
+      <div class="prose w-full flex-1 overflow-hidden rounded-3xl bg-white p-6 shadow-xl ring-1 ring-gray-900/10 sm:p-6 [&>iframe]:mt-4 [&>iframe]:block [&>iframe]:w-full">{{ .text | markdownify }}</div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }} {{ end }}
+
+<!-- Installaciones -->
+{{ with .Params.gallery }}{{ if .enable }}
+<div class="mx-auto mt-24 w-full max-w-7xl md:px-8">
+  <h3 class="p-4 text-2xl font-bold tracking-tight text-[#91d0cc] sm:text-3xl">{{ .title }}</h3>
+  <ul class="gallery grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3">
+    {{ range .images }}
+    <li>
+      <div class="inner">
+        <a href="/img/office/{{ .image }}" class="glightbox">
+          <img class="aspect-[3/2] w-full rounded-md object-cover" src="/img/office/{{ .image }}" alt="gallery image" />
+        </a>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{end}} {{ end }}
+<!-- End of Installaciones -->
+{{ end }}

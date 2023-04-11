@@ -1,0 +1,134 @@
+# [[main]]
+# name = "Inicio"
+# url = "/"
+# weight = 10
+
+[[main]]
+identifier = "quienes-somos"
+name = "Quienes somos"
+url = "/quienes-somos/" 
+pageRef = "/quienes-somos" 
+weight = 20
+
+[[main]]
+parent = "quienes-somos"
+identifier = "quienes"
+name = "Quienes somos"
+url = "/quienes-somos/"
+weight = 1
+
+[[main]]
+parent = "quienes-somos"
+identifier = "el-equipo"
+name = "El equipo"
+url = "/quienes-somos/#el-equipo"
+weight = 2
+
+[[main]]
+parent = "quienes-somos"
+identifier = "el-centro"
+name = "El centro"
+url = "/quienes-somos/#el-centro"
+weight = 3
+
+[[main]]
+identifier = "terapias"
+name = "Terapias"
+url = "/terapias/"
+weight = 30
+
+[[main]]
+identifier = "terapias1"
+parent = "terapias"
+name = "Terapias"
+url = "/terapias/"
+weight = 1
+
+[[main]]
+identifier = "poblacion-adulta"
+parent = "terapias"
+name = "Población Adulta"
+url = "/terapias/#poblacion-adulta"
+weight = 2
+
+[[main]]
+identifier = "poblacion-infantil"
+parent = "terapias"
+name = "Población Infantil"
+url = "/terapias/#poblacion-infantil"
+weight = 3
+
+[[main]]
+identifier = "poblacion-juvenil"
+parent = "terapias"
+name = "Población juvenil"
+url = "/terapias/#poblacion-juvenil"
+weight = 4
+
+[[main]]
+identifier = "terapia-familiar"
+parent = "terapias"
+name = "Terapia Familiar"
+url = "/terapias/#terapia-familiar"
+weight = 5
+
+[[main]]
+identifier = "terapia-de-pareja"
+parent = "terapias"
+name = "Terapia de Pareja"
+url = "/terapias/#terapia-de-pareja"
+weight = 6
+
+[[main]]
+identifier = "informes-y-peritajes-judiciales"
+parent = "terapias"
+name = "Informes y Peritajes Judiciales"
+url = "/terapias/#informes-y-peritajes-judiciales"
+weight = 7
+
+[[main]]
+identifier = "metodologia"
+name = "Metodología"
+url = "/metodologia/"
+weight = 40
+
+[[main]]
+identifier = "tarifas"
+name = "Tarifas"
+url = "/tarifas"
+weight = 50
+
+[[main]]
+identifier = "tarifas1"
+parent = "tarifas"
+name = "Tarifas"
+url = "/tarifas/"
+weight = 1
+
+[[main]]
+identifier = "politica-de-cancelaciones"
+parent = "tarifas"
+name = "Politica de cancelaciones"
+url = "/tarifas/#política-de-cancelaciones"
+weight = 2
+
+[[main]]
+identifier = "seguros-medicos"
+parent = "tarifas"
+name = "Seguros médicos"
+url = "/tarifas/#seguros-medicos"
+weight = 3
+
+[[main]]
+identifier = "contacto"
+name = "Contacto"
+url = "/contacto/"
+weight = 60
+
+[[main]]
+identifier = "colaboraciones"
+name = "Colaboraciones"
+url = "/colaboraciones/"
+weight = 70
+
+

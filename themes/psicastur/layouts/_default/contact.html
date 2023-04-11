@@ -1,0 +1,113 @@
+{{ define "main" }} {{ partial "title.html" . }}
+<div class="relative isolate bg-white">
+  <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+    <div class="relative px-6 pt-8 pb-20 sm:pt-8 lg:static lg:py-24 lg:px-8">
+      <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+        <div class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2"></div>
+        <div class="prose text-justify text-primary prose-strong:text-primary">{{ .Params.text_before | markdownify }}</div>
+
+        <dl class="my-10 space-y-4 text-base leading-7 text-primary text-gray-600">
+          {{ range .Site.Params.social }}
+          <div class="flex gap-x-4">
+            <dt class="flex-none">
+              <span class="sr-only">Telephone</span>
+              <i class="{{ .icon }}"></i>
+            </dt>
+            <a href="{{ .link }}" class="hover:opacity-80" rel="noopener noreferrer" target="_blank"
+              ><dd>{{ .name }}: <span class="font-bold">{{ .info }}</span></dd></a
+            >
+          </div>
+          {{ end }}
+        </dl>
+        <div class="prose text-justify text-primary prose-strong:text-primary">{{ .Params.text_after | markdownify }}</div>
+      </div>
+    </div>
+    <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8">
+      <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+        <div class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
+          <div class="sm:col-span-1">
+            <label for="name" class="block text-sm font-semibold leading-6 text-gray-900"></label>
+            <div class="mt-2.5">
+              <input type="text" name="name" id="name" autocomplete="name" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Your Name" />
+            </div>
+          </div>
+          <div class="sm:col-span-1">
+            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900"></label>
+            <div class="mt-2.5">
+              <input type="email" name="email" id="email" autocomplete="email" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Email Address" />
+            </div>
+          </div>
+          <div class="sm:col-span-1">
+            <label for="subject" class="block text-sm font-semibold leading-6 text-gray-900"></label>
+            <div class="mt-2.5">
+              <input type="tel" name="subject" id="subject" autocomplete="tel" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Subject" />
+            </div>
+          </div>
+          <div class="sm:col-span-1">
+            <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900"></label>
+            <div class="mt-2.5">
+              <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full border-0 border-b border-neutral-200 py-2 px-0 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Phone" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block text-sm font-semibold leading-6 text-gray-900"></label>
+            <div class="mt-2.5">
+              <textarea name="message" id="message" rows="1" class="block h-auto w-full border-0 border-b border-neutral-200 py-2 px-0 pt-5 text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#91d0cc] focus:outline-0 focus:ring-transparent sm:text-sm sm:leading-6" placeholder="Message"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2.5 flex items-start">
+          <div class="flex h-5 items-center">
+            <input id="terms" type="checkbox" value="" class="focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 text-[#91d0cc] focus:ring-[#91d0cc]" required />
+          </div>
+          <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">I agree with the <a href="/politica-privacidad/" class="text-[#5ab9b3] hover:underline" rel="noopener noreferrer" target="_blank">privacy policy</a></label>
+        </div>
+        <div class="mt-8 flex justify-end">
+          <button type="submit" class="rounded-md bg-[#91d0cc] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#9fd6d2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#91d0cc]">Send message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{{ with .Params.working_hours }} {{ if .enable }}
+<div class="isolate overflow-hidden bg-white">
+  <div class="mx-auto max-w-7xl px-6 py-8 text-center sm:pt-16 sm:pb-8 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-mint sm:text-4xl">{{ .title }}</h2>
+    </div>
+  </div>
+
+  <div class="flow-root bg-white pb-12 sm:pb-16">
+    <div class="mt-0">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-2">
+          {{ range .hours }}
+          <div class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
+            <div>
+              <h3 class="text-center text-base font-semibold text-primary md:text-xl">{{ .name }}</h3>
+              <div class="mt-4 flex flex-col items-center justify-center gap-2">
+                <p class="text-center font-bold">Lunes-jueves</p>
+                <p class="rounded-xl bg-beige px-4 py-2 text-center text-base tracking-tight text-primary md:text-xl">{{ .mon_thu }}</p>
+              </div>
+              <div class="mt-4 flex flex-col items-center justify-center gap-2">
+                <p class="text-center font-bold">Viernes</p>
+                <p class="rounded-xl bg-beige px-4 py-2 text-center text-base tracking-tight text-primary md:text-xl">{{ .friday }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        {{ with .informe }}
+        <div class="mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-4">
+          <div class="flex flex-col items-start gap-y-6 gap-x-8 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-2 lg:col-start-2 lg:flex-row lg:items-center">
+            <div class="prose text-justify text-primary lg:prose-lg lg:min-w-0 lg:flex-1">{{ . | markdownify }}</div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }} {{ end }} {{ end }}

@@ -1,0 +1,38 @@
+logo = '/img/psicastur-logo.png'
+
+
+########################### contact info ############################
+
+phone = "649.174.578"
+phone_link = "649174578"
+address = "C. Uría 50, Planta 2, Oficina 2, 33003 Oviedo, Asturias"
+address_link = "https://goo.gl/maps/DCtNCWruBYceLpzj6"
+
+
+########################### social icons ############################
+
+[[social]]
+name = "Facebook"
+info = "PsicAstur"
+icon = "fa-brands fa-facebook fa-xl"
+link = "https://facebook.com/PsicAstur"
+
+[[social]]
+name = "WhatsApp"
+info = "649174578"
+icon = "fa-brands fa-whatsapp fa-xl"
+link = "https://wa.me/649174578"
+
+[[social]]
+name = "Instagram"
+info = "psicastur"
+icon = "fa-brands fa-instagram fa-xl"
+link = "https://instagram.com/psicastur"
+
+[[social]]
+name = "Email"
+info = "administracion@psicastur.com"
+icon = "fa-solid fa-envelope fa-xl"
+link = "mailto:administracion@psicastur.com"
+
+

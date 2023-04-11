@@ -1,0 +1,111 @@
+{{ define "main" }} {{ partial "title.html" . }} {{ with .Params.tarifas }} {{ if .enable }}
+<div class="isolate overflow-hidden bg-white">
+  <div class="mx-auto max-w-7xl px-6 py-8 text-center sm:pt-16 sm:pb-8 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="mt-2 text-4xl font-bold tracking-tight text-mint sm:text-5xl">{{ .title }}</h2>
+    </div>
+    <div class="relative mt-6">
+      <p class="mx-auto max-w-2xl text-lg leading-8 text-gray-500">{{ .description }}</p>
+    </div>
+    <div class="mx-auto max-w-4xl">
+      <h2 class="mt-12 text-3xl font-bold tracking-tight text-primary sm:text-4xl">{{ .subtitle }}</h2>
+    </div>
+  </div>
+
+  <div class="flow-root bg-white pb-12 sm:pb-16">
+    <div class="mt-0">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-3">
+          {{ range .therapy }}
+          <div class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
+            <div>
+              <h3 class="text-center text-3xl font-bold text-gray-700">{{ .name }}</h3>
+              <div class="mt-4 flex items-baseline justify-center gap-x-2">
+                <p class="rounded-xl bg-zinc-50 px-4 py-2 text-center text-gray-700">Duración: <span class="text-3xl font-bold tracking-tight text-gray-900">{{ .duration }} </span>minutos</p>
+              </div>
+              <div class="mt-4 flex items-baseline justify-center gap-x-2">
+                <p class="rounded-xl bg-beige px-4 py-2 text-center text-gray-700">
+                  Precio:<br />
+                  <span class="text-3xl font-bold tracking-tight text-gray-900">{{ .price }}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        {{ with .bonos }} {{ if .enable }}
+        <div class="mx-auto max-w-7xl">
+          <h3 class="mt-16 mb-8 text-center text-3xl font-bold tracking-tight text-primary sm:text-4xl">{{ .title }}</h3>
+        </div>
+        <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-3">
+          {{ range .bono }}
+          <div class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
+            <div>
+              <h3 class="text-center text-3xl font-bold text-gray-700">{{ .name }}</h3>
+              <div class="mt-4 flex items-baseline justify-center gap-x-2">
+                <p class="rounded-xl bg-zinc-50 px-4 py-2 text-center text-gray-700">Duración: <span class="text-3xl font-bold tracking-tight text-gray-900">{{ .duration }} </span>sesiones</p>
+              </div>
+              <div class="mt-4 flex items-baseline justify-center gap-x-2">
+                <p class="rounded-xl bg-beige px-4 py-2 text-center text-gray-700">
+                  Precio:<br />
+                  <span class="text-3xl font-bold tracking-tight text-gray-900">{{ .price }}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }} {{ end }}
+        <div class="mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-4">
+          <div class="flex flex-col items-start gap-y-6 gap-x-8 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-2 lg:col-start-2 lg:flex-row lg:items-center">
+            <div class="prose text-center lg:prose-lg prose-p:text-primary prose-strong:text-primary lg:min-w-0 lg:flex-1">
+              {{ .informe | markdownify }}
+              <div class="flex justify-center gap-8">
+                {{ range .contact }}
+                <a href="{{ .link | safeURL }}" class="text-mint hover:opacity-80" rel="noopener noreferrer" target="_blank">
+                  <span class="sr-only">{{ .name }}</span>
+                  <i class="{{ .icon }} h-8"></i>
+                </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-8 lg:max-w-7xl">{{ .additional | markdownify }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }} {{ end }}
+
+<!-- Política de cancelaciones -->
+{{ with .Params.cancellations }} {{ if .enable }}
+<div id="política-de-cancelaciones" class="mx-auto max-w-7xl px-6 py-8 sm:pb-8 lg:px-8">
+  <h2 class="mt-2 pb-6 text-center text-4xl font-bold tracking-tight text-mint sm:text-5xl">{{ .title }}</h2>
+  <div class="prose max-w-none text-justify md:columns-2 md:gap-x-8 lg:min-w-0 lg:flex-1">{{ .text | markdownify }}</div>
+</div>
+{{ end }} {{ end }}
+
+<!-- LOGO CLOUD -->
+{{ with .Params.logo_cloud }} {{ if .enable }}
+<div id="seguros-medicos" class="my-16 bg-white sm:my-24">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <h2 class="mt-2 text-center text-4xl font-bold tracking-tight text-mint sm:text-5xl">{{ .title }}</h2>
+    <h3 class="my-8 text-center text-2xl tracking-tight text-gray-700 sm:text-5xl">{{ .subtitle }}</h3>
+
+    <div class="relative mt-6">
+      <p class="mx-auto max-w-2xl text-center text-xl leading-8 text-gray-500">{{ .text }}</p>
+    </div>
+    <div class="mx-auto mt-24 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+      {{ range .logos }}
+      <img class="col-span-2 max-h-16 w-full object-contain lg:col-span-1" src="{{ .logo }}" alt="{{ .name }}" width="158" height="48" />
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }} {{ end }}
+<!-- END OF LOGO CLOUD -->
+
+{{ end }}
