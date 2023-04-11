@@ -19,7 +19,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        local-dir: ./public
+        local-dir: ./public/
         server: ftp.psicastur.com
         username: monxas@psicastur.com
         password: ${{ secrets.ftp_password }}
