@@ -16,11 +16,11 @@ jobs:
         hugo-version: 'latest'
     - name: 🏗️ Build
       run: hugo --minify
-    - name: Auto Minify
-      uses: nizarmah/auto-minify@v2.1
-      with:
-        overwrite: true
-        directory: ./public/
+#    - name: Auto Minify
+#     uses: nizarmah/auto-minify@v2.1
+#     with:
+#       overwrite: true
+#       directory: ./public/
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
