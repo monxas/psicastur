@@ -45,7 +45,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Set email recipient and subject
   $to = "administracion@psicastur.com";
-  $bcc = "ramonkawa@gmail.com";
   $email_subject = "Mensaje del formulario de contacto: $subject";
 
   // Construct email message
@@ -91,7 +90,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Set headers for HTML email
   $headers = "From: $email\r\n";
   $headers .= "Reply-To: $email\r\n";
-  $headers .= "Bcc: $bcc\r\n";
   $headers .= "Content-type: text/html\r\n";
 
   // Send email

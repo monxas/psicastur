@@ -75,7 +75,7 @@ consultations:
     - title: "Consulta Online"
       button: "Más información"
       button_link: "/tarifas/"
-    - title: "Consulta"
+    - title: "Consulta Privada"
       button: "Más información"
       button_link: "/tarifas/"
     - title: "Seguros y Mutuas"
