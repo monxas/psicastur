@@ -18,7 +18,7 @@
     <h2 class="text-left text-3xl font-semibold leading-tight text-mint sm:text-5xl">{{ .title }}</h2>
     <div class="lg:mt-8 lg:gap-12 xl:columns-2">
       <img class="xl:not-prose picture prose w-full py-4 lg:pb-8 xl:ml-auto xl:h-[380px] xl:w-[567px] xl:object-cover" src="{{ .image }}" alt="{{ .title }}" />
-      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[450px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5">
+      <div class="terapias prose px-6 prose-a:text-[#91d0cc] hover:prose-a:text-[#76c4bf] prose-li:marker:text-beige md:min-h-[550px] lg:px-0 xl:my-12 xl:-mt-[395px] xl:max-w-none [&>p:first-child]:mt-5">
         {{- $markdown := .text | markdownify -}} {{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
         <p>{{ $markdown }}</p>
         {{ else }} {{ $markdown }} {{ end }}
