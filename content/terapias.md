@@ -125,14 +125,13 @@ terapias:
 
       image: "/img/terapias/pareja.webp"
 
-    - title: "Informes y Peritajes Judiciales"
-      id: "informes-y-peritajes-judiciales"
+    - title: "Informes psicológicos"
+      id: "informes-psicologicos"
       text: |-
         En el Gabinete de Psicología PsicAstur ofrecemos la posibilidad de realización de 3 tipos de informes:
 
         1.  **Informe de seguimiento**, en el que se recoge la información y resultado de las pruebas estandarizadas realizadas en la consulta para la evaluación y tratamiento del caso, incluyendo depresión, ansiedad, habilidades de afrontamiento, distorsiones de pensamiento y autoestima.
-        2.  **Informe diagnóstico**, que es un informe más completo que incluye pruebas diagnósticas sobre personalidad y funciones cognitivas
-        3.  **Informe psicológicos forenses,** realizados mediante una serie de técnicas que permiten acreditar de una forma objetiva, si hay una causalidad entre unos hechos y una sintomatología dentro del contexto jurídico
+        2.  **Informe diagnóstico**, que es un informe más completo que incluye pruebas diagnósticas sobre personalidad y funciones cognitivas.
 
         - **Si te sientes identificad@ o conoces a alguien que pueda estar pasando por ello, no dudes en contactar con nosotras e informarte**
 

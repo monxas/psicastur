@@ -49,7 +49,7 @@ how_we_work:
   text: |-
     Respecto al desarrollo de la terapia, al inicio siempre comenzamos con una **evaluación** adecuada mediante entrevista clínica y la aplicación de test y cuestionarios, que nos permitan **conocer en profundidad** a la persona que confía en nuestro equipo.
 
-    A continuación, y en base a la información obtenida se realizará la **intervención**, que tendrá una **duración variable** dependiendo del tipo de situación o problemática que se presenta. Aplicaremos el enfoque y técnicas que consideramos más adecuadas en cada caso particular, buscando una mejoría lo antes posible. En este punto, las consultas se realizan de forma más continua con el objetivo de **adquirir las herramientasnecesarias** frente al problema.
+    A continuación, y en base a la información obtenida se realizará la **intervención**, que tendrá una **duración variable** dependiendo del tipo de situación o problemática que se presenta. Aplicaremos el enfoque y técnicas que consideramos más adecuadas en cada caso particular, buscando una mejoría lo antes posible. En este punto, las consultas se realizan de forma más continua con el objetivo de **adquirir las herramientas necesarias** frente al problema.
 
     Cuando se han adquirido y observamos esa mejoría tanto nosotras como el paciente, se espaciarán las sesiones en el tiempo, llevando a cabo **revisiones de seguimiento** para comprobar que el cambio necesario se **consolida** a medio y largo plazo. Cuando el problema que trajo a la persona a consulta se considera resuelto, se procederá a dar el **alta**.
 

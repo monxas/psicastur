@@ -52,10 +52,10 @@ terapias_links:
       image: "/img/icon05.webp"
       text: "Recursos para mejorar la comunicación y adquisición de habilidades para el desarrollo de una relación afectiva sana"
 
-    - name: "Informes y Peritajes Judiciales"
-      link: "/terapias/#informes-y-peritajes-judiciales"
+    - name: "Informes psicológicos"
+      link: "/terapias/#informes-psicologicos"
       image: "/img/icon06.webp"
-      text: "Realización de informes psicológicos, educativos y judiciales"
+      text: "Realización de informes psicológicos y educativos"
 
 # How we work
 how_we_work:

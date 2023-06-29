@@ -80,10 +80,10 @@ url = "/terapias/#terapia-de-pareja"
 weight = 6
 
 [[main]]
-identifier = "informes-y-peritajes-judiciales"
+identifier = "informes-psicologicos"
 parent = "terapias"
-name = "Informes y Peritajes Judiciales"
-url = "/terapias/#informes-y-peritajes-judiciales"
+name = "Informes psicológicos"
+url = "/terapias/#informes-psicologicos"
 weight = 7
 
 [[main]]
