@@ -16,10 +16,6 @@ team:
 
   people_heading: "Conócenos"
   people:
-    - name: Alba Alonso Fernández
-      title: Dirección PsicAstur
-      specialization: Psicóloga General Sanitaria
-      image: "/img/team/alba.jpg"
     - name: Lucía Hevia García
       title: Dirección PsicAstur
       specialization: Psicóloga General Sanitaria
