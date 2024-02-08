@@ -19,7 +19,7 @@ Web: www.psicastur.com
 
 Inscripción de la entidad:
 
-- Centro sanitario: Numero de registro de sanidad \_\_\_\_\_\_\_\_\_\_\_\_\_
+- Centro sanitario: Numero de registro de sanidad C.2.2/6938
 
 **USUARIOS**
 
