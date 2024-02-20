@@ -21,7 +21,7 @@ intro:
   title: "Os damos la bienvenida a PsicAstur"
   enable: true
   text: |-
-    Somos Alba, Sheila y Lucía; psicólogas especializadas en psicología general sanitaria, con pasión por nuestra profesión y años de experiencia. En nuestro camino, nos hemos encontrado con un gran equipo humano, y hemos formado una pequeña familia que comparte nuestra misma visión y método de trabajo. Te invitamos a que visites nuestra página, nos conozcas y sepas cómo trabajamos.
+    Somos Sheila, Lucía, Ana y Lidia; psicólogas especializadas en psicología general sanitaria, con pasión por nuestra profesión y años de experiencia. En nuestro camino, nos hemos encontrado con un gran equipo humano, y hemos formado una pequeña familia que comparte nuestra misma visión y método de trabajo. Te invitamos a que visites nuestra página, nos conozcas y sepas cómo trabajamos.
 
 # Terapias links
 terapias_links:
