@@ -24,6 +24,14 @@ team:
       title: Dirección PsicAstur
       specialization: Psicóloga General Sanitaria
       image: "/img/team/sheila.jpg"
+    - name: Lidia Hernández Díez
+      title: 
+      specialization: Psicóloga General Sanitaria
+      image: "/img/team/lidia.jpg"
+    - name: Ana Menéndez Alonso
+      title: 
+      specialization: Psicóloga General Sanitaria
+      image: "/img/team/ana.jpg"
 
 # El centro
 el_centro:
